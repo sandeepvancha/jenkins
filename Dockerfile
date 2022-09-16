@@ -3,8 +3,7 @@ FROM ubuntu:${VERSION}
 MAINTAINER sandeep@gmail.com
 LABEL production="maintainerk"
 RUN apt update  && apt install iproute2 iputils-ping -y nginx
-WORKDIR /usr/share/nginx/html
-COPY index.html .
+COPY index.html /usr/share/nginx/html
 WORKDIR /var/www/html
 ADD index.html .
 EXPOSE 80
