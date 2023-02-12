@@ -1,2 +1,2 @@
 # jenkins
-alwayes ok
+# always ok
